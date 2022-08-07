@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="/" class="logo">
+                <img src="./img/logo.svg" alt="Logo Pessoa">
+            </a>
+        </nav>
+
+        <a href="/" id="btnDelete">
+            Deletar Pessoa
+        </a>
+
+        <div class="container">
+            
+            <div class="title">
+                <h2 class="title-h2">Adicionar Pessoa</h2>
+            </div>
+
+            <form id="formField">
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="fullname">Nome Completo</label>
+                    <input type="text" id="fullname" name="fullname" class="fieldset-input">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="cpf">CPF</label>
+                    <input class="fieldset-input" type="text" id="cpf" name="cpf" pattern="(\d{3}\.?\d{3}\.?\d{3}-?\d{2})|(\d{2}\.?\d{3}\.?\d{3}/?\d{4}-?\d{2})" placeholder="xxx.xxx.xxx-xx">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="apelido">Apelido</label>
+                    <input class="fieldset-input" type="text" id="apelido" name="apelido">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="gender">Sexo</label>
+                    <input class="fieldset-input" type="text" id="gender" name="gender">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="phone">Telefone</label>
+                    <input class="fieldset-input" type="text" id="phone" name="phone" placeholder="(xx)xxxxx-xxxx">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="address">Endereço</label>
+                    <input class="fieldset-input" type="text" id="address" name="address">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label class="fieldset-label" for="note">Observação</label>
+                    <input class="fieldset-input" type="text" id="note" name="note">
+                </fieldset>
+                <fieldset  class="fieldset">
+                    <label class="fieldset-label" for="image">Imagem Pessoa</label>
+                    <input type="file" name="image" id="image">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <button id="btnRegister" class="buttonField" type="submit">Cadastrar</button>
+                </fieldset>
+            </form>
+        </div>
+
+
+    </main>
+    <!-- <script type="module" src="./js/create.js"></script> -->
+    <script src="./js/create.js"></script>
+</body>
+</html>
