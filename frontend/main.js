@@ -12,12 +12,12 @@ function writeTable (people) {
         const personHTML = `
             <tr class="table-body-row">
                 <td class="table-tbody-row-data">${person.fullname}</td>
-                <td class="table-tbody-row-data">${person.cpf}</td>
-                <td class="table-tbody-row-data">${person.nickname}</td>
-                <td class="table-tbody-row-data">${person.gender}</td>
-                <td class="table-tbody-row-data">${person.phone}</td>
-                <td class="table-tbody-row-data">${person.address}</td>
-                <td class="table-tbody-row-data">${person.note}</td>
+                <td class="table-tbody-row-data show500px">${person.cpf}</td>
+                <td class="table-tbody-row-data show500px">${person.nickname}</td>
+                <td class="table-tbody-row-data show500px">${person.gender}</td>
+                <td class="table-tbody-row-data show500px">${person.phone}</td>
+                <td class="table-tbody-row-data show500px">${person.address}</td>
+                <td class="table-tbody-row-data show500px">${person.note}</td>
                 <td class="table-tbody-row-data">
                     <a href="./create_person.html?id=${person.id}"><img class="btn-action" src="./img/edit.svg"></a>
                 </td>
